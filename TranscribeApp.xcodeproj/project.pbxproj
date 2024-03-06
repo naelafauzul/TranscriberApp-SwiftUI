@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9125CC972B986EE300B77F4B /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 9125CC962B986EE300B77F4B /* XCAOpenAIClient */; };
+		9125CC9A2B986F1900B77F4B /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = 9125CC992B986F1900B77F4B /* SiriWaveView */; };
+		9125CC9C2B98706400B77F4B /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9125CC9B2B98706400B77F4B /* Voice.swift */; };
+		9125CC9E2B9870C600B77F4B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9125CC9D2B9870C600B77F4B /* ViewModel.swift */; };
 		915C74D92B96E60B009CEC42 /* TranscribeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C74D82B96E60B009CEC42 /* TranscribeAppApp.swift */; };
 		915C74DB2B96E60B009CEC42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915C74DA2B96E60B009CEC42 /* ContentView.swift */; };
 		915C74DD2B96E60D009CEC42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915C74DC2B96E60D009CEC42 /* Assets.xcassets */; };
@@ -19,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9125CC9B2B98706400B77F4B /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		9125CC9D2B9870C600B77F4B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		915C74D52B96E60B009CEC42 /* TranscribeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranscribeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915C74D82B96E60B009CEC42 /* TranscribeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeAppApp.swift; sourceTree = "<group>"; };
 		915C74DA2B96E60B009CEC42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9125CC972B986EE300B77F4B /* XCAOpenAIClient in Frameworks */,
+				9125CC9A2B986F1900B77F4B /* SiriWaveView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +53,7 @@
 		9116AAD32B980D51002867C0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9125CC9D2B9870C600B77F4B /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -68,8 +77,8 @@
 		915C74D72B96E60B009CEC42 /* TranscribeApp */ = {
 			isa = PBXGroup;
 			children = (
-				9116AAD32B980D51002867C0 /* ViewModel */,
 				915C74F12B9716AD009CEC42 /* Model */,
+				9116AAD32B980D51002867C0 /* ViewModel */,
 				915C74E62B96E658009CEC42 /* View */,
 				915C74D82B96E60B009CEC42 /* TranscribeAppApp.swift */,
 				915C74DA2B96E60B009CEC42 /* ContentView.swift */,
@@ -110,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				915C74F22B9716D0009CEC42 /* MeetingData.swift */,
+				9125CC9B2B98706400B77F4B /* Voice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +141,8 @@
 			);
 			name = TranscribeApp;
 			packageProductDependencies = (
+				9125CC962B986EE300B77F4B /* XCAOpenAIClient */,
+				9125CC992B986F1900B77F4B /* SiriWaveView */,
 			);
 			productName = TranscribeApp;
 			productReference = 915C74D52B96E60B009CEC42 /* TranscribeApp.app */;
@@ -161,6 +173,8 @@
 			);
 			mainGroup = 915C74CC2B96E60B009CEC42;
 			packageReferences = (
+				9125CC952B986EE300B77F4B /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+				9125CC982B986F1900B77F4B /* XCRemoteSwiftPackageReference "SiriWaveView" */,
 			);
 			productRefGroup = 915C74D62B96E60B009CEC42 /* Products */;
 			projectDirPath = "";
@@ -189,9 +203,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				915C74DB2B96E60B009CEC42 /* ContentView.swift in Sources */,
+				9125CC9E2B9870C600B77F4B /* ViewModel.swift in Sources */,
 				915C74EB2B96EBAA009CEC42 /* SummaryRow.swift in Sources */,
 				915C74D92B96E60B009CEC42 /* TranscribeAppApp.swift in Sources */,
 				915C74F32B9716D0009CEC42 /* MeetingData.swift in Sources */,
+				9125CC9C2B98706400B77F4B /* Voice.swift in Sources */,
 				915C74F52B971DC8009CEC42 /* MeetingDetail.swift in Sources */,
 				915C74ED2B96EBBC009CEC42 /* SummaryListView.swift in Sources */,
 				915C74E82B96E681009CEC42 /* RecordScreen.swift in Sources */,
@@ -331,11 +347,13 @@
 				DEVELOPMENT_TEAM = ZN33ZJFC65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Transcribe with AI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,11 +378,13 @@
 				DEVELOPMENT_TEAM = ZN33ZJFC65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Transcribe with AI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +420,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9125CC952B986EE300B77F4B /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		9125CC982B986F1900B77F4B /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9125CC962B986EE300B77F4B /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9125CC952B986EE300B77F4B /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+		9125CC992B986F1900B77F4B /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9125CC982B986F1900B77F4B /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 915C74CD2B96E60B009CEC42 /* Project object */;
 }
